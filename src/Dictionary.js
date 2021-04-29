@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Meaning from "./Meaning";
 
 
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState(null);
+    let [meaning, setMeaning] = useState({});
 
     function handleResponse(response) {
-        
+        setMeaning(response.data[0]);
     }
 
     function search(event) {
@@ -26,7 +28,7 @@ export default function Dictionary() {
             <form onSubmit={search} >
                 <input type="search" autoFocus={true} onChange={handleKeyword} />
             </form>
-
+            <Meaning results={meaning}/>
         </div>
     );
 }
