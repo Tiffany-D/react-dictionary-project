@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SearchResult from "./SearchResult";
-import Phonetics from "./Phonetics";
+
 
 
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState("");
     let [results, setResults] = useState(null);
-    let [phonetic, setPhonetic] = useState(null);
+    
 
     function handleResponse(response) {
         setResults(response.data[0]);
@@ -31,7 +31,8 @@ export default function Dictionary() {
                 <input type="search" autoFocus={true} onChange={handleKeyword} />
             </form>
             <SearchResult results={results} />
-            <Phonetics phonetic={phonetic}/>
+
+           
         </div>
     );
 }
