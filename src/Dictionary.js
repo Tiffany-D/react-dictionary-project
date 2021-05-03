@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SearchResult from "./SearchResult";
+import "./Dictionary.css";
 
 
 
@@ -39,10 +40,20 @@ export default function Dictionary(props) {
     if (loaded) {
         return (
             <div className="Dictionary-App">
+                  <h1>
+        Dictionary
+        </h1>
                 <section>
+                
+                   
+        <h2>
+          What word do you want to look up ? 
+       </h2>
                     <form onSubmit={handleSubmit} >
                         <input type="search" autoFocus={true} onChange={handleKeyword} />
+                        <span>
                     suggested words: bishop, rook, pawn, queen, king,...
+                      </span>  
             </form>
                 </section>
 

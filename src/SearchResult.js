@@ -6,6 +6,7 @@ export default function SearchResult(props) {
     if (props.results) {
         
         return (
+            <section>
             <div className="SearchResult">
                 <h2>
                     {props.results.word}
@@ -24,6 +25,7 @@ export default function SearchResult(props) {
                     );
                 })}
             </div>
+            </section>
         );
 
     } else {

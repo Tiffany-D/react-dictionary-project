@@ -5,6 +5,7 @@ import ReactAudioPlayer from 'react-audio-player';
 export default function Phonetics(props) {
     console.log(props.phonetic);
     return (
+        <section>
         <div className="Phonetics">
             <span className="text">
         {props.phonetic.text}
@@ -13,5 +14,6 @@ export default function Phonetics(props) {
             <ReactAudioPlayer src={props.phonetic.audio} onPlay controls volume={0.5}/>
            
         </div>
+        </section>
     );
 }
