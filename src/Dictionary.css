@@ -1,5 +1,28 @@
-.Dictionary-App section {
-    background:white;
-    border-radius: 12px;
-    box-shadow: 5px 5px 5px black;
+.Dictionary section {
+    background:#321313;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px 0;
+    margin-left: 150px;
+    margin-right: 150px;
+   
+    
+}
+
+h1{
+    text-align: center;
+    color: #fdffcd;
+}
+h2{
+    color: #fdffcd;
+}
+
+ input{
+     
+    padding: 12px 6px;
+    width: 40%;
+}
+
+p{
+    color: #fdba9a;
 }

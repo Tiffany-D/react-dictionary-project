@@ -1,7 +1,16 @@
 body {
-    background: url("./chess.jpg");
+    background: url("./chess-pattern.png");
     background-position:center;
-   background-repeat: no-repeat;
     background-size: cover;
     
+}
+
+footer{
+    text-align: center;
+    color: #453953;
+    font-weight: bold;
+}
+
+a{
+    color: #b84a39;
 }

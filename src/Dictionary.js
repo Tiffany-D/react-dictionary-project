@@ -39,10 +39,12 @@ export default function Dictionary(props) {
     
     if (loaded) {
         return (
-            <div className="Dictionary-App">
+            <div className="Dictionary">
+                <section>
                   <h1>
-        Dictionary
+                    Dictionary
         </h1>
+              </section>  
                 <section>
                 
                    
@@ -50,11 +52,13 @@ export default function Dictionary(props) {
           What word do you want to look up ? 
        </h2>
                     <form onSubmit={handleSubmit} >
-                        <input type="search" autoFocus={true} onChange={handleKeyword} />
-                        <span>
+                        <input type="search" autoFocus={true} onChange={handleKeyword} defaultValue={props.defaultKeyword}/>
+                     
+                    </form>
+                    <br/>
+                    <p>
                     suggested words: bishop, rook, pawn, queen, king,...
-                      </span>  
-            </form>
+                    </p>
                 </section>
 
                 <SearchResult results={results} />

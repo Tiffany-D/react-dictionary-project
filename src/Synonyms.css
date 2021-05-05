@@ -1,0 +1,16 @@
+.Syn section{
+    color: #fdba9a;
+    
+}
+
+.Syn li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 15px;
+    margin: 5px;
+}
+
+.Syn{
+    margin: 20px 0 0;
+    padding: 0;
+}
