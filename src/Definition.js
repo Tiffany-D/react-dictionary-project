@@ -3,6 +3,7 @@ import Synonyms from "./Synonyms";
 import "./Definition.css";
 
 export default function Definition(props) {
+    
     return (
         <div className="Definition">
             <h3>
@@ -12,9 +13,9 @@ export default function Definition(props) {
                 return (
                     <div key={index}>
                         <p>
-                            {props.value.definitions[0].definition}
+                            {results.definitions}
                             <em>
-                                {props.value.definitions[0].example}
+                                {results.example}
                                 <Synonyms syn={results.synonyms}/>
                             </em>
                         </p>
