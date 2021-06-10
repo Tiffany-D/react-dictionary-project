@@ -27,3 +27,9 @@ h2{
 p{
     color: #fdba9a;
 }
+
+@media(max-width:576px){
+    .Dictionary section{
+        margin: 20px;
+    }
+}
